@@ -1,0 +1,56 @@
+{
+  "name": "rsbuild-plugin-vue-legacy",
+  "version": "0.0.0",
+  "description": "By setting an alias for Vue to support versions below 2.7 (ensuring code compatibility with version 2.7)",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "release": "release-it",
+    "build": "unbuild"
+  },
+  "keywords": [
+    "rsbuild",
+    "rsbuild-plugin",
+    "plugin",
+    "vue"
+  ],
+  "author": "skymoonya",
+  "license": "MIT",
+  "dependencies": {
+    "module-alias": "^2.2.3",
+    "vue-v2.7": "npm:vue@^2.7.16"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^0.5.7",
+    "@types/node": "^20.12.4",
+    "release-it": "^17.1.1",
+    "typescript": "^5.4.4",
+    "unbuild": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@rsbuild/core": "*"
+  },
+  "files": [
+    "dist",
+    "composition.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skymoonya/rsbuild-plugin-vue-legacy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/skymoonya/rsbuild-plugin-vue-legacy/issues"
+  },
+  "homepage": "https://github.com/skymoonya/rsbuild-plugin-vue-legacy#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
+}
