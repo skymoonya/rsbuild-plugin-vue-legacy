@@ -1,11 +1,11 @@
 name: Release
 on:
   workflow_dispatch:
-  # push:
-  #   branches:
-  #     - main
-  #   paths:
-  #     - 'src/**'
+  push:
+    branches:
+      - main
+    paths:
+      - 'src/**'
 env:
   CI: true
 jobs:
