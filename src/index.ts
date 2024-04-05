@@ -20,7 +20,9 @@ export default function rsbuildPluginVueLegacy(): RsbuildPlugin {
             config.resolve.alias.vue = vue2_7;
             config.resolve.alias.vue$ = vue2_7;
             config.resolve.alias['@vue/composition-api'] = require.resolve('../composition.js');
-            config.resolve.alias['vue-demi'] = require.resolve('vue-demi/lib/v2.7/index.mjs');
+            try {
+              config.resolve.alias['vue-demi'] = require.resolve('vue-demi/lib/v2.7/index.mjs');
+            } catch {}
           }
         },
       }));
