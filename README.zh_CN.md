@@ -13,9 +13,9 @@ npm i rsbuild-plugin-vue-legacy -D
 ```
 2. 配置 `rsbuild`
 ```js
-import { defineConfig } from'@rsbuild/core'
-import { pluginVue2 } from "@rsbuild/plugin-vue2";
-import vueLegacy from'rsbuild-plugin-vue-legacy'
+import { defineConfig } from '@rsbuild/core'
+import { pluginVue2 } from '@rsbuild/plugin-vue2'
+import vueLegacy from 'rsbuild-plugin-vue-legacy'
 
 export default defineConfig({
   plugins: [
