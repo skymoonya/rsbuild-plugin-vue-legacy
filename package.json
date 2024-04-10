@@ -1,6 +1,6 @@
 {
   "name": "rsbuild-plugin-vue-legacy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Support for Vue versions below 2.7 by setting an alias for vue (switch vue version in the project to 2.7)",
   "type": "module",
   "exports": {
